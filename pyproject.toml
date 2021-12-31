@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "steadfast-consumption"
+version = "0.1.0"
+description = "Become the content carnivore you were always meant to be."
+authors = ["Kyle Anthony Williams <kyle.anthony.williams2@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^2.0.2"
+
+
+[tool.poetry.dev-dependencies]
+python-dotenv = "^0.19.2"
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
