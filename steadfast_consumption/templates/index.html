@@ -7,4 +7,24 @@ Index
 {% block main %}
 <h1>Steadfast Consumption</h1>
 <p>Become the content carnivore you were always meant to be.</p>
+
+<h2>Generators</h2>
+
+<details>
+	<summary>Twitch Filter</summary>
+	<form action="/twitch/filter" method="get">
+		<label>
+			Twitch VOD ID:
+			<input type="number" required min="0" step="1" name="video_id" placeholder="1249376281">
+		</label>
+		<br>
+		<label>
+			Multiplier:
+			<input type="number" required min="1" step="0.1" name="multiplier" value="2" placeholder="3">
+		</label>
+		<br>
+		<button type="submit">Submit</button>
+	</form>
+</details>
+
 {% endblock %}

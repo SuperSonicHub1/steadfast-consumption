@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% set site = data["site"] %}
+
+{% block title %}
+{{ title }} - {{ type }}
+{% endblock %}
+
+{% block main %}
+<h1>{{ title }} - {{ type }}</h1>
+
+<script type="application/json" id="segments">
+{{ data | tojson }}
+</script>
+
+{% if site == "twitch" %}
+	<div id="twitch-embed"></div>
+	<script src="https://embed.twitch.tv/embed/v1.js"></script>
+{% endif %}
+<script src="/static/sequencer.js"></script>
+{% endblock %}

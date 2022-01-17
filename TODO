@@ -1,0 +1,7 @@
+* add human-readable representations of how long all the clips are
+	* https://pypi.org/project/human-readable/
+* add dedicated buttons
+	* previous segment
+	* next segment
+	* pause state
+* let users download and upload segments in order to put less pressure on the server to archive stuff
